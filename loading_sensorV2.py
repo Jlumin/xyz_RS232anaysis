@@ -129,8 +129,13 @@ for i in range(len(cle_datime)):
 #transform to the dataframe    
 
 bb=pd.DataFrame()
+cc=pd.DataFrame()
+cc['time']=time
+cc=pd.to_datetime(cc['time'])
+bb['time']=cc
 bb['x']=x
 bb['y']=y
 bb['z']=z
+
 bb.to_csv('./original_data.csv')
 
