@@ -137,5 +137,5 @@ bb['x']=x
 bb['y']=y
 bb['z']=z
 
-bb.to_csv('./original_data.csv')
+bb.to_csv('./upload_code/google-drive-api-tutorial-master/google-drive-upload/AA/'+strftime("%Y%m%d%H%M%S")+'original_data.csv')
 
